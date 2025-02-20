@@ -6,7 +6,7 @@ import Image from "next/image";
 import { notFound, useRouter } from "next/navigation";
 
 interface RestaurantHeaderProps {
-  restaurant: Pick<Restaurant, "name" | "coverImageUrl">;
+  restaurant: Pick<Restaurant, "name" | "coverImageUrl"> | null;
 }
 
 export function RestaurantHeader({ restaurant }: RestaurantHeaderProps) {
